@@ -1,0 +1,10 @@
+.setting-col{position:relative; top:5em;
+  .setting-btn-row{border-bottom:1px solid #cccccc; 
+    a{font:normal 21px 'OpenSansRegular', arial, sans-serif; color:#405365; display:block; width:100%; padding:1.25em 35px;
+      i{margin-right:10px; font-size: 24px; text-align: center;}
+      &:hover,&:focus{color:#f2f2f2; background:#405365;}
+    }
+  }
+}
+
+

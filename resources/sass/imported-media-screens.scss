@@ -1,0 +1,63 @@
+@media only screen and (min-width:1024px) and (max-width:1250px){
+  @import 'media_1024_screen/@mediascreen_login';
+  @import 'media_1024_screen/@mediascreen_header';
+  @import 'media_1024_screen/@mediascreen_navigation';
+
+}
+
+@media only screen and (min-width:970px) and (max-width:1023px) {
+  @import 'media_970_screen/@mediascreen_login';
+  @import 'media_970_screen/@mediascreen_header';
+  @import 'media_970_screen/@mediascreen_navigation';
+
+}
+
+@media only screen and (min-width:854px) and (max-width:969px) {
+  @import 'media_854_screen/@mediascreen_login';
+  @import 'media_854_screen/@mediascreen_header';
+  @import 'media_854_screen/@mediascreen_navigation';
+}
+
+@media only screen and (min-width:768px) and (max-width:853px) {
+  @import 'media_768_screen/@mediascreen_login';
+  @import 'media_768_screen/@mediascreen_header';
+  @import 'media_768_screen/@mediascreen_navigation';
+}
+
+@media only screen and (min-width:640px) and (max-width:767px) {
+  @import 'media_640_screen/@mediascreen_login';
+  @import 'media_640_screen/@mediascreen_header';
+  @import 'media_640_screen/@mediascreen_navigation';
+}
+
+@media only screen and (min-width:480px) and (max-width:639px){
+  @import 'media_480_screen/@mediascreen_login';
+  @import 'media_480_screen/@mediascreen_header';
+  @import 'media_480_screen/@mediascreen_navigation';
+}
+
+@media only screen and (min-width:414px) and (max-width:479px){
+  @import 'media_414_screen/@mediascreen_login';
+  @import 'media_414_screen/@mediascreen_header';
+  @import 'media_414_screen/@mediascreen_navigation';
+  @import 'media_414_screen/@mediascreen_info_content';
+  @import 'media_414_screen/@mediascreen_index_content';
+  @import 'media_414_screen/@mediascreen_search_content';
+  @import 'media_414_screen/@mediascreen_setting_content';
+}
+
+@media only screen and (min-width:360px) and (max-width:413px){
+  @import 'media_360_screen/@mediascreen_login';
+  @import 'media_360_screen/@mediascreen_header';
+  @import 'media_360_screen/@mediascreen_navigation';
+  @import 'media_360_screen/@mediascreen_info_content';
+  @import 'media_360_screen/@mediascreen_index_content';
+
+}
+
+@media only screen and (min-width:100px) and (max-width:359px){
+  @import 'media_320_screen/@mediascreen_login';
+  @import 'media_320_screen/@mediascreen_header';
+  @import 'media_320_screen/@mediascreen_navigation';
+}
+

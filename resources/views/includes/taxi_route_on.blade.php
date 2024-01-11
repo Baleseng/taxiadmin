@@ -1,0 +1,65 @@
+<div class="admin-dashboard-widget">
+  <div class="admin-dashboard-col-3">
+    <div class="admin-dashboard-heading">
+      <div class="view-results-block">  
+        <h2>0</h2> 
+      </div>
+      <div class="view-results-block">  
+        <span>On the Road</span>
+      </div>  
+      <div class="view-addbtn-block row" id="hideDiv">
+        <a href="{{ url('owner/add') }}" class="addbtn"><i class="fa fa-plus-square"></i> <b>Add</b></a>
+      </div>
+
+    </div>
+
+    <div class="admin-dashboard-col-3">
+      <div class="admin-wrap-article">
+        <div class="table_head_row">
+          <div class="table_head_title">Model</div>
+          <div class="table_head_stats">Registration</div>
+          <div class="table_head_stats">Association</div>
+          <div class="table_head_stats">Status</div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="admin-dashboard-col-3">
+      <div class="admin-scroll-article" id="scroll-y">
+        @foreach ($owner as $taxi)
+          <div class="table_row row">
+            <div class="table_title"> {{ $taxi->model }} </div>
+            <div class="table_stats">
+              <b><a href="{{ url($url.'/taxi/'.$taxi->id . '-' . str_replace(' ', '-', $taxi->registration)) }}"> {{ $taxi->registration }}</a></b>
+            </div>
+            <div class="table_stats"> {{ $taxi->association }} </div>   
+            <div class="table_stats"> {{ $taxi->status }}</div> 
+            <div class="table_stats">
+              <a href="{{ url($url.'/edit/'.$taxi->id . '-' . str_replace(' ', '-', $taxi->registration)) }}">Edit</a>
+              </div> 
+            
+            <div class="dropdown2">
+              <span class="dropbtn2 fa fa-ellipsis-v"></span>
+              <div id="m5" class="dropdown2-content">
+
+                <div class="index-btn-row">
+                  <a href="">
+                    <i class="fa fa-eye"></i>Est. Income
+                  </a>
+                </div>
+
+                <div class="index-btn-row">
+                  <a href="">
+                    <i class="fa fa-map-marked-alt"></i>Routes
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          @endforeach
+      </div>
+    </div>
+  </div>
+</div>

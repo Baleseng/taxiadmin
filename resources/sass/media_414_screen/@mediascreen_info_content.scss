@@ -1,0 +1,77 @@
+
+
+.taxi-profile-container{width:100%; min-height:850px; margin:auto; padding:15px; position:relative; top:5em;
+  
+  .breadcrumb-wrap{display: block;
+    ul.breadcrumb {padding: 10px 0; list-style: none;
+      li+li:before {padding: 8px; color: #f26522; content: "/\00a0";}
+      li {display: inline; font:normal 14px 'OpenSansRegular', arial, sans-serif; color:#f26522;
+        a {color: #aaaaaa; text-decoration: underline;
+          &:hover{color: #01447e; text-decoration: none;}
+        }
+      }
+    }
+  }
+
+  .taxi-profile-row{display:block;
+    
+    .taxi-profile-col-1{width:100%;}
+    .taxi-profile-col-2{width:100%;}
+    .taxi-profile-col-1,.taxi-profile-col-2{min-height:200px;
+      
+      .taxi-profile-img{width:55%; height:200px; margin:0 auto; overflow:hidden;
+        img{width:100%; color:#ccc; font-size:12.5em; text-align:center;}
+      }
+
+      .taxi-profile-name{width:100%;
+        h1{font-family: 'OpenSansRegular', arial, sans-serif; color:#405365; text-transform:uppercase;}
+        .taxi-profile-interest{margin:5px 0;
+          b{color:#f26522; font:normal 14px arial, sans-serif;}
+          span,span.parked,span.route,span.suspended,span.archived{color:#333333;text-indent: 15px; font:normal 14px arial, sans-serif; text-transform: uppercase;}
+          span.parked{color:red;}
+          span.route{color:green;}
+          span.suspended{color:orange; }
+          span.archived{color:orange;}        
+        }
+      }
+
+      .taxi-profile-title{position:relative; margin: 25px 0;
+        .taxi-profile-border{border-top:1px solid #a1a1a1; width:100%; position:absolute; top:.5em;}
+        .taxi-profile-h5{background:#f2f2f2; min-width:50px; padding-right:5px;  display:table; position:relative; z-index:1; text-transform:uppercase; font:bold 14px 'OpenSansRegular', arial, sans-serif; color:#a1a1a1;}
+      }
+
+      .taxi-profile-form{padding: 5px;
+        form{
+          label{color:#f26522; font:normal 14px arial, sans-serif; display:inline-block;
+            span{text-transform: uppercase; color:#333333;}
+          }
+          input{display:inline-block; width:70%; margin-left:10px;}
+          select{display:block; width:100%;}
+          input,
+          select{background:#f2f2f2; padding:15px 5px; color:#405365; border-radius:5px; margin-top:15px; margin-bottom:15px; border:1px solid #cccccc; font:normal 14px arial, sans-serif;}
+          button{background:#f26522; display:block; width:100%; padding:15px 0; color:#333333; border-radius:5px; border:1px solid #cccccc; font-weight:bold; margin-top:15px;}
+        }
+      }
+
+      span.ranking-number{font:bold 28px 'OpenSansRegular', arial, sans-serif; color:#f26522; display:block;}
+      .taxi-profile-raking{margin-top:15px; padding:0;
+        i.ranked{color:#f26522;}
+        i.unranked{color:#f2f2f2;}
+      }
+
+      .taxi-profile-info{margin-top:15px; padding:0;
+        .taxi-profile-title{position:relative; margin:25px 0;
+          .taxi-profile-border{border-top:1px solid #a1a1a1; width:100%; position:absolute; top:.5em;}
+          .taxi-profile-h5{background:#f2f2f2; min-width:50px; padding-right:5px;  display:table; position:relative; z-index:1; text-transform:uppercase; font:bold 14px 'OpenSansRegular', arial, sans-serif; color:#a1a1a1;}
+        }
+        .taxi-profile-li{padding:5px 0;
+          i{font-size:9px;}
+          h6{font-family: 'OpenSansRegular', arial, sans-serif; color:#333333;}
+          b{color:#f26522; font:normal 14px arial, sans-serif;}
+          span{color:#333333;text-indent: 15px; font:normal 14px arial, sans-serif; text-transform:uppercase;}
+        }
+      }
+
+    }
+  }
+}
