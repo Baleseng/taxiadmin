@@ -46,7 +46,13 @@ class OwnerController extends Controller
 
     public function store(Taxi $taxi, Owner $owner, Request $request){
         $url = 'owner';
-        Taxi::create(request(['model','registration','seater','status','driver','owner_id',]));
+        Taxi::create(request([
+            'model',
+            'registration',
+            'seater',
+            'status',
+            'driver',
+            'owner_id',]));
         return redirect('owner');
     }
 
